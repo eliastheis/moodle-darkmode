@@ -5,9 +5,7 @@ async function darkDashboard() {
   timelineLength = document.getElementsByClassName('list-group-item flex-column py-2 pl-0 pr-0 border-0').length;
 
 
-  while (document.getElementsByClassName('course-info-container').length == courseLength) {
-    await sleep(100);
-  }
+  await sleep(1000);
   elems = document.getElementsByClassName('course-info-container');
   for (let j = 0; j < elems.length; j++) {
     try {
@@ -17,9 +15,6 @@ async function darkDashboard() {
     } catch (e) {}
   }
 
-  while (document.getElementsByClassName('list-group-item flex-column py-2 pl-0 pr-0 border-0').length == timelineLength) {
-    await sleep(100);
-  }
   // timeline
   elems = document.getElementsByClassName('list-group-item flex-column py-2 pl-0 pr-0 border-0')
   for (let j = 0; j < elems.length; j++) {
