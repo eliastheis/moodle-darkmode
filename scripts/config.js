@@ -8,6 +8,7 @@ const backgroundColorLightest = '#383838';
 const textColor = 'white';
 const borderColor = backgroundColorLightest;
 const menueBorderColor = backgroundColor;
+const linkColor = '#007edf';
 
 function addDefaultDesign(elem) {
   elem.style.backgroundColor = backgroundColor;

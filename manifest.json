@@ -57,6 +57,10 @@
             "js": ["sites/mod_folder.js"]
         },
         {
+            "matches": ["*://moodle.uni-wuppertal.de/mod/assign/*"],
+            "js": ["sites/mod_assign.js"]
+        },
+        {
             "matches": ["*://moodle.uni-wuppertal.de/report/filehash/*"],
             "js": ["sites/report_filehash.js"]
         },
