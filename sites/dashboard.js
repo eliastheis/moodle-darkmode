@@ -25,7 +25,6 @@ async function darkDashboard() {
 
 
   // update if change (not final, pls improve)
-  tmp = document.getElementsByClassName('course-info-container')[4].style.backgroundColor
   while (true) {
     await sleep(100);
     elems = document.getElementsByClassName('course-info-container');
