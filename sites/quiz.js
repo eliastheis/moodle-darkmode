@@ -60,6 +60,25 @@ for (let j = 0; j < elems.length; j++) {
     elems[j].style.border = 'none';
   } catch (e) {}
 }
+elems = document.getElementsByClassName('bestrow');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    addDefaultDesign(elems[j]);
+    nodes = elems[j].childNodes;
+    for (let k = 0; k < nodes.length; k++) {
+      try {
+        addDefaultDesign(elems[j].childNodes[k]);
+      } catch (e) {}
+    }
+  } catch (e) {}
+}
+
+elems = document.getElementsByClassName('cell');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    addDefaultDesign(elems[j]);
+  } catch (e) {}
+}
 
 // SHOW PAGE
 document.body.style.setProperty('display', 'inherit', 'important');
