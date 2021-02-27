@@ -25,7 +25,8 @@
                    "scripts/footer.js",
                    "scripts/generalElements.js",
                    "scripts/show.js"],
-            "exclude_matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*"]
+            "exclude_matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*",
+                                "*://moodle.uni-wuppertal.de/login/*"]
         },
         {
             "matches": [ "*://moodle.uni-wuppertal.de/" ],
@@ -68,6 +69,14 @@
                    "scripts/footer.js",
                    "scripts/generalElements.js",
                    "sites/quiz.js"
+                  ]
+        },
+        {
+            "matches": ["*://moodle.uni-wuppertal.de/login/*"],
+            "js": ["scripts/config.js",
+                   "scripts/footer.js",
+                   "scripts/generalElements.js",
+                   "sites/login.js"
                   ]
         }
     ]
