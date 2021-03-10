@@ -66,6 +66,10 @@
             "js": ["sites/mod_assign.js"]
         },
         {
+            "matches": ["*://moodle.uni-wuppertal.de/mod/forum/*"],
+            "js": ["sites/mod_forum.js"]
+        },
+        {
             "matches": ["*://moodle.uni-wuppertal.de/report/filehash/*"],
             "js": ["sites/report_filehash.js"]
         },
