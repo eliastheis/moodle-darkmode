@@ -3,13 +3,49 @@
         <style type="text/css">
             html, body {
                 width: 300px;
-                height: 300px;
-                background-color: "#282828";
+                height: 240px;
+                background-color: #282828;
+                margin: 0px;
+            }
+            p, a {
+                color: white;
+            }
+            .main {
+                width: 280px;
+                height: 100%;
+                background-color: #282828;
+                margin: 0px;
+                padding: 0px;
+                padding: 10px;
+            }
+            .title {
+                padding: 10px;
+                color: #89bb3f;
             }
         </style>
+        <meta charset="utf-8"/>
     </head>
 
     <body>
-        <p>Das ist ein Test.</p>
+        <div class="main">
+
+            <h3 class="title">Vielen Dank fürs Herunterladen!</h3>
+
+            <p>
+                Die Browser-Extension erfasst keine Daten und der Code ist <a href="https://github.com/eliastheis/moodle-darkmode" target="_blank">Open-Source</a>.<br>
+
+                Alle bekannten Fehler sind behoben. Solltest du dennoch einen Fehler finden, kannst du ihn <a href="https://github.com/eliastheis/moodle-darkmode/issues/new/choose" target="_blank">hier</a> melden oder mir eine <a href="mailto:mail@eliastheis.de" target="_blank">E-Mail schreiben</a>.
+                Es gibt keine Garantie auf eine korrekte Darstellung der Inhalte.<br>
+
+                Wenn es dir gefällt, kannst du mich hier unterstützen:<br>
+                
+            </p>
+
+            <a href="https://www.buymeacoffee.com/eliastheis" target="_blank">
+                <img src="coffee.png" alt="Buy Me A Coffee" style="width: 150px;" >
+            </a>
+        </div>
+        
+        <script type="text/javascript" src="popup.js"></script>
     </body>
 </html>
