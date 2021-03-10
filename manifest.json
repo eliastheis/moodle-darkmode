@@ -34,12 +34,12 @@
             "js": ["sites/index.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/course/*"],
-            "js": ["sites/course.js"]
+            "matches": ["*://moodle.uni-wuppertal.de/course/view*"],
+            "js": ["sites/course_view.js"]
         },
         {
             "matches": ["*://moodle.uni-wuppertal.de/user/index.*"],
-            "js": ["sites/user.js"]
+            "js": ["sites/user_index.js"]
         },
         {
             "matches": ["*://moodle.uni-wuppertal.de/grade/*"],
