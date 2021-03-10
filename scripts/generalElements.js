@@ -43,6 +43,13 @@ async function generalElements() {
     elems[i].style.color = textColor;
   }
 
+  // text fields
+  elems = document.getElementsByTagName('textarea')
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].style.backgroundColor = backgroundColorLight;
+    elems[i].style.color = textColor;
+  }
+
   // selects
   elems = document.getElementsByTagName('select')
   for (let i = 0; i < elems.length; i++) {
