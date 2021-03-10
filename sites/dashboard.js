@@ -1,11 +1,9 @@
 console.log('[DarkMode] loading dashboard.js...');
 
 async function darkDashboard() {
-  courseLength = document.getElementsByClassName('course-info-container').length;
-  timelineLength = document.getElementsByClassName('list-group-item flex-column py-2 pl-0 pr-0 border-0').length;
 
+  let temp = dashboardRefreshNum;
 
-  await sleep(1000);
   elems = document.getElementsByClassName('course-info-container');
   for (let j = 0; j < elems.length; j++) {
     try {
@@ -23,10 +21,7 @@ async function darkDashboard() {
     } catch (e) {}
   }
 
-
-  // update if change (not final, pls improve)
-  while (true) {
-    await sleep(100);
+  while (temp-- >= 0) {
     elems = document.getElementsByClassName('course-info-container');
     for (let j = 0; j < elems.length; j++) {
       try {
@@ -58,7 +53,11 @@ async function darkDashboard() {
         addDefaultDesign(elems[j]);
       } catch (e) {}
     }
+
+    // sleep
+    await sleep(dashboardSleepTime);
   }
+  console.log('[DarkMode] dashboard finished')
 }
 
 darkDashboard();
