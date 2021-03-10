@@ -1,4 +1,4 @@
-console.log('[DarkMode] loading course.js...');
+console.log('[DarkMode] loading course_view.js...');
 
 
 elems = document.getElementsByClassName('region_main_settings_menu_proxy')

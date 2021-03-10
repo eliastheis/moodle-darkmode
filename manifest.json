@@ -38,6 +38,10 @@
             "js": ["sites/course_view.js"]
         },
         {
+            "matches": ["*://moodle.uni-wuppertal.de/course/user*"],
+            "js": ["sites/course_user.js"]
+        },
+        {
             "matches": ["*://moodle.uni-wuppertal.de/user/index.*"],
             "js": ["sites/user_index.js"]
         },

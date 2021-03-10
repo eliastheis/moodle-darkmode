@@ -1,4 +1,4 @@
-console.log('[DarkMode] loading user.js...');
+console.log('[DarkMode] loading user_index.js...');
 
 // filter
 elem = document.getElementsByClassName('filter-group my-2 p-2 bg-light border-radius border')[0];
