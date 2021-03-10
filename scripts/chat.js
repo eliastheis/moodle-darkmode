@@ -85,7 +85,13 @@ async function darkChat() {
 		  elems[i].style.color = textColor;
 		}
 
-		await sleep(1000);
+		if (chatRefreshNum > 0) {
+			chatRefreshNum--;
+			await sleep(chatSleepTimeShort);
+		} else {
+			await sleep(chatSleepTimeLong);
+		}
+		
 	}
 }
 

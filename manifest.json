@@ -19,11 +19,12 @@
             "matches": [ "*://moodle.uni-wuppertal.de/*" ],
             "css": ["css/hide.css"],
             "js": ["scripts/config.js",
+                   "scripts/click.js",
                    "scripts/banner.js",
                    "scripts/menue.js",
-                   "scripts/chat.js",
                    "scripts/footer.js",
                    "scripts/generalElements.js",
+                   "scripts/chat.js",
                    "scripts/show.js"],
             "exclude_matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*",
                                 "*://moodle.uni-wuppertal.de/login/*"]
