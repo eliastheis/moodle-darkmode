@@ -146,6 +146,16 @@ async function generalElements() {
     } catch (e) {}
   }
 
+  // icon
+  try {
+    elem = document.getElementsByClassName('icon fa fa-comment fa-fw iconsmall')[0];
+    elem.style.color = textColor;
+
+    // "Mitteilungen"
+    elem = document.getElementsByClassName('header-button-title')[0];
+    elem.style.color = textColor;
+  } catch (e) {}
+
   // logout popup
   while (true) {
     try {

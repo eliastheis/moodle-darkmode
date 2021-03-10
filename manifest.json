@@ -38,10 +38,6 @@
             "js": ["sites/course_view.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/course/user*"],
-            "js": ["sites/course_user.js"]
-        },
-        {
             "matches": ["*://moodle.uni-wuppertal.de/user/index.*"],
             "js": ["sites/user_index.js"]
         },
@@ -72,10 +68,6 @@
         {
             "matches": ["*://moodle.uni-wuppertal.de/report/filehash/*"],
             "js": ["sites/report_filehash.js"]
-        },
-        {
-            "matches": ["*://moodle.uni-wuppertal.de/message/output/popup/notifications.php*"],
-            "js": ["sites/message_output_popup_notifications.js"]
         },
         {
             "matches": ["*://moodle.uni-wuppertal.de/user/view.php*", "*://moodle.uni-wuppertal.de/user/profile.php*"],
