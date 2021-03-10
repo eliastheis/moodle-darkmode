@@ -4,23 +4,6 @@ async function darkDashboard() {
 
   let temp = dashboardRefreshNum;
 
-  elems = document.getElementsByClassName('course-info-container');
-  for (let j = 0; j < elems.length; j++) {
-    try {
-      elems[j].style.backgroundColor = backgroundColor;
-      elems[j].style.color = textColor;
-      elems[j].style.borderColor = borderColor;
-    } catch (e) {}
-  }
-
-  // timeline
-  elems = document.getElementsByClassName('list-group-item flex-column py-2 pl-0 pr-0 border-0')
-  for (let j = 0; j < elems.length; j++) {
-    try {
-      addDefaultDesign(elems[j]);
-    } catch (e) {}
-  }
-
   while (temp-- >= 0) {
     elems = document.getElementsByClassName('course-info-container');
     for (let j = 0; j < elems.length; j++) {
@@ -30,7 +13,7 @@ async function darkDashboard() {
         elems[j].style.borderColor = borderColor;
       } catch (e) {}
     }
-    elems = document.getElementsByClassName('card-footer dashboard-card-footer border-0 bg-white');
+    elems = document.getElementsByClassName('card-footer dashboard-card-footer border-0');
     for (let j = 0; j < elems.length; j++) {
       elems[j].style.backgroundColor = backgroundColor;
       elems[j].style.color = textColor;
