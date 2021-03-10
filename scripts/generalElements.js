@@ -108,14 +108,25 @@ async function generalElements() {
     } catch (e) {}
   }
 
-/*
-  // tables (tbody)
-  elems = document.getElementsByTagName('tbody');
+  // table hover
+  elems = document.getElementsByClassName('cell');
   for (let j = 0; j < elems.length; j++) {
     try {
-      elems[j].style.border = '1px solid ' + textColor;
+      addDefaultDesign(elems[j]);
     } catch (e) {}
-  }*/
+  }
+  elems = document.getElementsByClassName('leveleven');
+  for (let j = 0; j < elems.length; j++) {
+    try {
+      addDefaultDesign(elems[j]);
+    } catch (e) {}
+  }
+  elems = document.getElementsByClassName('levelodd');
+  for (let j = 0; j < elems.length; j++) {
+    try {
+      addDefaultDesign(elems[j]);
+    } catch (e) {}
+  }
 
   // generalbox
   elems = document.getElementsByClassName('generalbox');
@@ -144,6 +155,7 @@ async function generalElements() {
       elem.style.color = textColor;
     } catch (e) {}
   }
+
 }
 
 generalElements()
