@@ -2,7 +2,7 @@
     "name": "Darkmode für BUW Moodle",
     "version": "1.2.0",
     "manifest_version": 2,
-    "description": "Diese Extension erweitertet Moodle von BUW (Bergische Universität Wuppertal) um einen Darkmode. Sie erfasst keine Daten und der Code ist Open-Source.",
+    "description": "Der DarkMode für Moodle von BUW (Bergische Universität Wuppertal). Er erfasst keine Daten und der Code ist Open-Source.",
     "icons": 
 {        "128": "icon.png"
     },
