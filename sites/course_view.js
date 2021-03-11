@@ -1,7 +1,6 @@
 console.log('[DarkMode] loading course_view.js...');
 
 async function darkCourse() {
-
   elems = document.getElementsByClassName('region_main_settings_menu_proxy')
   for (let i = 0; i < elems.length; i++) {
     addDefaultDesign(elems[i]);
@@ -16,7 +15,7 @@ async function darkCourse() {
   }
 
   while (true) {
-  	elems = document.getElementsByClassName('activity')
+    elems = document.getElementsByClassName('activity')
     for (let i = 0; i < elems.length; i++) {
       addDefaultDesign(elems[i]);
     }

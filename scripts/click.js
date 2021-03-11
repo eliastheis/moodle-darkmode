@@ -1,7 +1,6 @@
 console.log('[DarkMode] loading click.js...');
 
 async function click() {
-
   document.body.onclick = function() {
     // console.log('clicked');
     clickRefreshNum = clickRefreshNumOrg;
@@ -15,7 +14,6 @@ async function click() {
       await sleep(clickSleepTimeLong);
     }
   }
-
 }
 
 click();
