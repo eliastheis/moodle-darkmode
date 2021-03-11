@@ -165,7 +165,6 @@ async function generalElements() {
       elem.style.color = textColor;
     } catch (e) {}
   }
-
 }
 
 generalElements()

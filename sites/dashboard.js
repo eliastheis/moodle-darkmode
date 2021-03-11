@@ -1,7 +1,6 @@
 console.log('[DarkMode] loading dashboard.js...');
 
 async function darkDashboard() {
-
   let temp = dashboardRefreshNum;
 
   while (temp-- >= 0) {

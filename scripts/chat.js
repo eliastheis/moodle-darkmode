@@ -1,9 +1,7 @@
 console.log('[DarkMode] loading chat.js...');
 
 async function darkChat() {
-
   while (true) {
-
     // categories
     elems = document.getElementsByClassName('section border-0 card')
     for (let i = 0; i < elems.length; i++) {
@@ -11,7 +9,7 @@ async function darkChat() {
       elems[i].style.color = textColor;
     }
 
-    
+
     // chat-app
     elems = document.getElementsByClassName('message-app')
     for (let i = 0; i < elems.length; i++) {

@@ -1,7 +1,5 @@
 console.log('[DarkMode] loading mod_assign.js...');
 
-
-
 elems = document.getElementsByClassName('cell');
 for (let j = 0; j < elems.length; j++) {
   try {
