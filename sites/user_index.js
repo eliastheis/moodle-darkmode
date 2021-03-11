@@ -27,10 +27,10 @@ finished = false;
 elems = document.getElementsByTagName("tr");
 for (let i = 1; i < elems.length; i++) {
   
-	if (i%2 == 0) {
-	  elems[i].style.backgroundColor = backgroundColor;
-	} else {
-	  elems[i].style.backgroundColor = backgroundColorLight;
-	}
+  if (i%2 == 0) {
+    elems[i].style.backgroundColor = backgroundColor;
+  } else {
+    elems[i].style.backgroundColor = backgroundColorLight;
+  }
   
 }
