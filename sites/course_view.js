@@ -20,11 +20,7 @@ async function darkCourse() {
     for (let i = 0; i < elems.length; i++) {
       addDefaultDesign(elems[i]);
     }
-    if (clickRefreshNum > 0) {
-      await sleep(clickSleepTimeShort);
-    } else {
-      await sleep(clickSleepTimeLong);
-    }
+    await sleep(clickRefreshNum > 0 ? clickSleepTimeShort : clickSleepTimeLong);
   }
 }
 
