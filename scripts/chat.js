@@ -34,7 +34,7 @@ async function darkChat() {
     }
 
     // messages in overview
-    elems = document.getElementsByClassName("text-muted")
+    elems = document.getElementsByClassName('text-muted')
     for (let i = 0; i < elems.length; i++) {
       elems[i].classList.remove('text-muted');
     }
@@ -61,12 +61,12 @@ async function darkChat() {
     }
 
     // message
-    elems = document.getElementsByClassName("message")
+    elems = document.getElementsByClassName('message')
     for (let i = 0; i < elems.length; i++) {
       elems[i].style.backgroundColor = backgroundColorLightest;
       elems[i].style.color = textColor;
     }
-    elems = document.getElementsByClassName("tail position-absolute")
+    elems = document.getElementsByClassName('tail position-absolute')
     for (let i = 0; i < elems.length; i++) {
       elems[i].style.borderBottomColor = backgroundColorLightest;
     }

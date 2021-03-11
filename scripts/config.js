@@ -1,6 +1,6 @@
 console.log('[DarkMode] loading config.js...');
 
-const start_date = new Date();
+const startDate = new Date();
 
 // colors
 const backgroundColor = '#181818';

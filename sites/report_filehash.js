@@ -19,7 +19,7 @@ finished = false;
 index = 0;
 while (!finished) {
   try {
-    elem = document.getElementById("flexible-table_r" + index);
+    elem = document.getElementById('flexible-table_r' + index);
     if (index%2 == 1) {
       elem.style.backgroundColor = backgroundColor;
     } else {
