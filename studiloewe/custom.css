@@ -1,0 +1,7 @@
+table.treeTable td,table.treeTableWithIcons td
+ {
+	vertical-align: top;
+	border-top: 2px solid ;
+	border-color: #383838;
+	padding: 5px 1px 5px 1px;
+}

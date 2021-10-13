@@ -10,6 +10,7 @@ const textColor = 'white';
 const borderColor = backgroundColorLightest;
 const menueBorderColor = backgroundColor;
 const linkColor = '#007edf';
+const buw_green = '#89ba17';
 
 // dashboard
 const dashboardSleepTime = 10; // refresh 10 times per second

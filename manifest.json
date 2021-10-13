@@ -1,20 +1,47 @@
 {
-    "name": "Darkmode für BUW Moodle",
-    "version": "1.2.0",
+    "name": "Darkmode für BUW Moodle und Studilöwe",
+    "version": "1.3.0",
     "manifest_version": 2,
-    "description": "Der DarkMode für Moodle von BUW (Bergische Universität Wuppertal). Er erfasst keine Daten und der Code ist Open-Source.",
+    "description": "Der DarkMode für Moodle und Studilöwe von BUW (Bergische Universität Wuppertal). Er erfasst keine Daten und der Code ist Open-Source.",
     "icons": 
 {        "128": "icon.png"
     },
     "permissions": [
-        "*://moodle.uni-wuppertal.de/*"
+        "*://moodle.uni-wuppertal.de/*",
+        "*://hisinone.uni-wuppertal.de/*"
     ],
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html",
-        "default_title": "Darkmode für BUW Moodle"
+        "default_title": "Darkmode für BUW Moodle und Studilöwe"
     },
     "content_scripts": [
+        {
+            "matches": [ "*://hisinone.uni-wuppertal.de/*" ],
+            "js": ["scripts/config.js",
+                   "studiloewe/main.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/plan/individualTimetable.xhtml?*"],
+            "js": ["studiloewe/stundenplan.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/enrollment/info/start.xhtml?*"],
+            "js": ["studiloewe/studienplaner.js"],
+            "css": ["studiloewe/custom.css"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/startFlow.xhtml?*"],
+            "js": ["studiloewe/detailansicht.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces?*"],
+            "js": ["studiloewe/start.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cs/sys/portal/subMenu.faces?*"],
+            "js": ["studiloewe/benutzer.js"]
+        },
         {
             "matches": [ "*://moodle.uni-wuppertal.de/*" ],
             "css": ["css/hide.css"],
