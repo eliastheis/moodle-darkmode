@@ -2,7 +2,7 @@
     "name": "Darkmode für BUW Moodle und Studilöwe",
     "version": "1.3.0",
     "manifest_version": 2,
-    "description": "Der DarkMode für Moodle und Studilöwe von BUW (Bergische Universität Wuppertal). Er erfasst keine Daten und der Code ist Open-Source.",
+    "description": "Der DarkMode für Moodle und Studilöwe von BUW (Bergische Universität Wuppertal). Er erfasst keine Daten und der Code ist Open-Source",
     "icons": 
 {        "128": "icon.png"
     },
