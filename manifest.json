@@ -26,7 +26,7 @@
             "js": ["studiloewe/stundenplan.js"]
         },
         {
-            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/enrollment/info/start.xhtml?*"],
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/enrollment/info/start.xhtml?_flowId=studyPlanner-flow*"],
             "js": ["studiloewe/studienplaner.js"],
             "css": ["studiloewe/custom.css"]
         },
@@ -35,12 +35,40 @@
             "js": ["studiloewe/detailansicht.js"]
         },
         {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/coursemanagement/basicCourseData.xhtml?*"],
+            "js": ["studiloewe/detailansicht2.js"]
+        },
+        {
             "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces?*"],
             "js": ["studiloewe/start.js"]
         },
         {
             "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cs/sys/portal/subMenu.faces?*"],
             "js": ["studiloewe/benutzer.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/enrollment/info/start.xhtml?_flowId=searchOwnEnrollmentInfo-flow*"],
+            "js": ["studiloewe/belegungen.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/enrollment/info/start.xhtml?_flowId=studyservice-flow*"],
+            "js": ["studiloewe/studienservice.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/sul/examAssessment/personExamsReadonly.xhtml?*"],
+            "js": ["studiloewe/leistungen.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/coursemanagement/basicCourseData.xhtml?*"],
+            "js": ["studiloewe/veranstaltung_suchen.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cs/sys/portal/userinfo/userInfo.faces?*"],
+            "js": ["studiloewe/rollenwechsel.js"]
+        },
+        {
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/timetable/currentLectures.xhtml?*"],
+            "js": ["studiloewe/tagesaktuelle_veranstaltungen.js"]
         },
         {
             "matches": [ "*://moodle.uni-wuppertal.de/*" ],

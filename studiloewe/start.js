@@ -27,3 +27,9 @@ async function start() {
 
 
 start()
+
+elems = document.getElementsByClassName("loginStartPage")
+for (let j = 0; j < elems.length; j++) {
+    elems[j].style.setProperty("background-color", backgroundColorLight, "important");
+    elems[j].style.setProperty("color", textColor, "important");
+}
