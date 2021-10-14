@@ -1,4 +1,4 @@
-# Darkmode für BUW Moodle.
+# Darkmode für BUW Moodle und Studilöwe
 Diese Extension erweitertet [Moodle](https://moodle.uni-wuppertal.de/) und [Studilöwe](https://studilöwe.uni-wuppertal.de/) von BUW (Bergische Universität Wuppertal) um einen Darkmode.
 
 ## Download
@@ -10,4 +10,6 @@ Ich bin kein Javascript oder Browser-Extension Entwickler. Ich habe bisher keine
 
 ## Screnhots
 ![screenshot 1](screenshots/screenshot_1.png)<br>
-![screenshot 2](screenshots/screenshot_2.png)
+![screenshot 2](screenshots/screenshot_2.png)<br>
+![screenshot 3](screenshots/screenshot_3.png)<br>
+![screenshot 4](screenshots/screenshot_4.png)
