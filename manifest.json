@@ -31,12 +31,9 @@
             "css": ["studiloewe/custom.css"]
         },
         {
-            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/startFlow.xhtml?*"],
+            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/startFlow.xhtml?*",
+                        "*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/coursemanagement/basicCourseData.xhtml?*"],
             "js": ["studiloewe/detailansicht.js"]
-        },
-        {
-            "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cm/exa/coursemanagement/basicCourseData.xhtml?*"],
-            "js": ["studiloewe/detailansicht2.js"]
         },
         {
             "matches": ["*://hisinone.uni-wuppertal.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces?*"],

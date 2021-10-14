@@ -4,23 +4,21 @@ console.log('[DarkMode] loading main.js...');
 document.body.style.backgroundColor = backgroundColor;
 document.body.style.color = textColor;
 
-
-
 // general stuff
 tags = ["input", "label", "ul"]
 for (let i = 0; i < tags.length; i++) {
-    elems = document.getElementsByTagName(tags[i])
+    elems = document.getElementsByTagName(tags[i]);
     for (let j = 0; j < elems.length; j++) {
         elems[j].style.setProperty("background-color", backgroundColor, "important");
         elems[j].style.setProperty("color", textColor, "important");
     }
 }
-elems = document.getElementsByTagName("label")
+elems = document.getElementsByTagName("label");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColorLightest, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
-elems = document.getElementsByTagName("button")
+elems = document.getElementsByTagName("button");
 for (let j = 0; j < elems.length; j++) {
     //elems[j].style.setProperty("background-color", backgroundColorLightest, "important");
     elems[j].style.setProperty("color", textColor, "important");
@@ -28,77 +26,70 @@ for (let j = 0; j < elems.length; j++) {
 
 
 // menu
-elems = document.getElementsByClassName("topMenuLink")
+elems = document.getElementsByClassName("topMenuLink");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColorLight, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
-elems = document.getElementsByClassName("topMenuLinkHighlighted")
+elems = document.getElementsByClassName("topMenuLinkHighlighted");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", buw_green, "important");
     elems[j].style.setProperty("color", "black", "important");
 }
-elems = document.getElementsByClassName("iconfont-house")
+elems = document.getElementsByClassName("iconfont-house");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", "white", "important");
 }
-elems = document.getElementsByClassName("subMenuLink")
+elems = document.getElementsByClassName("subMenuLink");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("color", textColor, "important");
 }
-
-
 
 // footer
-elems = document.getElementsByClassName("divfoot_navigation_portal")
+elems = document.getElementsByClassName("divfoot_navigation_portal");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColorLight, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
-elems = document.getElementsByClassName("footerLinks")
+elems = document.getElementsByClassName("footerLinks");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColorLight, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
 
-elems = document.getElementsByClassName("sLink")
+elems = document.getElementsByClassName("sLink");
 for (let j = 0; j < elems.length; j++) {
-    if (elems[j].classList.contains("portalInfoBoxLink")) {
-
-    } else if (elems[j].classList.contains("short-waiting-behavior")) {
-
-    } else if (elems[j].classList.contains("waiting-behavior")) {
-
-    } else {
+    if (!elems[j].classList.contains("portalInfoBoxLink") &&
+        !elems[j].classList.contains("short-waiting-behavior") &&
+        !elems[j].classList.contains("waiting-behavior")) {
+        
         elems[j].style.setProperty("background-color", backgroundColorLight, "important");
         elems[j].style.setProperty("color", textColor, "important");
+
     }
 }
 
-
-
 // container
-elems = document.getElementsByClassName("box_green_bg_grey")
+elems = document.getElementsByClassName("box_green_bg_grey");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColorLight, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
-elems = document.getElementsByClassName("colhead")
+elems = document.getElementsByClassName("colhead");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColorLight, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
-elems = document.getElementsByClassName("iconfont-resultset_next")
+elems = document.getElementsByClassName("iconfont-resultset_next");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColor, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
-elems = document.getElementsByClassName("timelineItem")
+elems = document.getElementsByClassName("timelineItem");
 for (let j = 0; j < elems.length; j++) {
     elems[j].style.setProperty("background-color", backgroundColorLight, "important");
     elems[j].style.setProperty("color", textColor, "important");
 }
-
 
 // header icons
 document.getElementById("collapsibleHeaderActionFrom:userInformationCenter").style.setProperty("background-color", buw_green, "important");
